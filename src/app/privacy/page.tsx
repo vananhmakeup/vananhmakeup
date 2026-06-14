@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "How Vananhh collects, uses, and protects your personal data.",
+  description: "How Anh Do collects, uses, and protects your personal data.",
 };
 
 export default function PrivacyPage() {
@@ -32,7 +32,7 @@ export default function PrivacyPage() {
           },
           {
             title: "Your rights",
-            body: "Under GDPR, you have the right to access, correct, or delete your personal data at any time. To exercise these rights, contact hello@vananhh.fi.",
+            body: "Under GDPR, you have the right to access, correct, or delete your personal data at any time. To exercise these rights, contact hello@Anh Do.fi.",
           },
           {
             title: "Cookies",
@@ -40,7 +40,7 @@ export default function PrivacyPage() {
           },
           {
             title: "Contact",
-            body: "For any data-related enquiries, contact: hello@vananhh.fi",
+            body: "For any data-related enquiries, contact: hello@Anh Do.fi",
           },
         ].map(({ title, body }) => (
           <div key={title} className="flex flex-col gap-2">

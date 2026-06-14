@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Meet the artist behind Vananhh — a Helsinki-based freelance makeup artist committed to Nordic clean beauty, cruelty-free products, and timeless results.",
+    "Meet the artist behind Anh Do — a Helsinki-based freelance makeup artist committed to Nordic clean beauty, cruelty-free products, and timeless results.",
 };
 
 const brands = [
@@ -144,7 +144,7 @@ export default function AboutPage() {
             className="mt-5 text-[13px] text-[var(--color-ash)]"
             style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
           >
-            — Vananhh
+            — Anh Do
           </p>
         </div>
       </section>

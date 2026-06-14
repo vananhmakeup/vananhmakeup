@@ -41,13 +41,13 @@ export default function Navigation() {
           <Link
             href="/"
             className="flex flex-col leading-none group"
-            aria-label="Vananhh — Home"
+            aria-label="Anh Do — Home"
           >
             <span
               className="text-2xl font-light text-[var(--color-charcoal-birch)] tracking-tight"
               style={{ fontFamily: "var(--font-cormorant), serif" }}
             >
-              Vananhh
+              Anh Do
             </span>
             <span
               className="text-[10px] tracking-[0.18em] uppercase text-[var(--color-ash)] mt-0.5"

@@ -21,8 +21,8 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Vananhh — Makeup Artist Helsinki",
-    template: "%s | Vananhh — Makeup Artist Helsinki",
+    default: "Anh Do — Makeup Artist Helsinki",
+    template: "%s | Anh Do — Makeup Artist Helsinki",
   },
   description:
     "Premium freelance makeup artist based in Helsinki, Finland. Specialising in Nordic clean beauty, high-end bridal styling, and editorial fashion makeup. Cruelty-free and sustainably minded.",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     "Nordic clean beauty",
   ],
   openGraph: {
-    title: "Vananhh — Makeup Artist Helsinki",
+    title: "Anh Do — Makeup Artist Helsinki",
     description:
       "Premium freelance makeup artist based in Helsinki, Finland. Clean beauty, bridal styling, and editorial fashion makeup.",
     locale: "en_FI",

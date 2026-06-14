@@ -26,7 +26,7 @@ export default function Footer() {
               className="text-3xl font-light tracking-tight text-[var(--color-off-white)]"
               style={{ fontFamily: "var(--font-cormorant), serif" }}
             >
-              Vananhh
+              Anh Do
             </span>
             <span
               className="text-[10px] tracking-[0.18em] uppercase text-[var(--color-ash)] mt-1"
@@ -92,10 +92,10 @@ export default function Footer() {
           <ul className="flex flex-col gap-3 text-[14px] text-[var(--color-linen-mist)]" style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}>
             <li>
               <a
-                href="mailto:hello@vananhh.fi"
+                href="mailto:hello@Anh Do.fi"
                 className="hover:text-[var(--color-nordic-sand)] transition-colors duration-200"
               >
-                hello@vananhh.fi
+                hello@Anh Do.fi
               </a>
             </li>
             <li>Helsinki, Finland</li>
@@ -118,7 +118,7 @@ export default function Footer() {
             className="text-[12px] text-[var(--color-ash)]"
             style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
           >
-            © {new Date().getFullYear()} Vananhh. All rights reserved.
+            © {new Date().getFullYear()} Anh Do. All rights reserved.
           </p>
           <div className="flex items-center gap-2">
             <LeafIcon />

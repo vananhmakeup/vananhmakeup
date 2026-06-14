@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with Vananhh — makeup artist Helsinki. For bookings, press enquiries, and collaborations.",
+  description: "Get in touch with Anh Do — makeup artist Helsinki. For bookings, press enquiries, and collaborations.",
 };
 
 export default function ContactPage() {
@@ -37,8 +37,8 @@ export default function ContactPage() {
 
             <div className="flex flex-col gap-5 mt-4">
               {[
-                { label: "Email", value: "hello@vananhh.fi", href: "mailto:hello@vananhh.fi" },
-                { label: "Instagram", value: "@vananhhmakeup", href: "https://instagram.com" },
+                { label: "Email", value: "hello@Anh Do.fi", href: "mailto:hello@Anh Do.fi" },
+                { label: "Instagram", value: "@Anh Domakeup", href: "https://instagram.com" },
                 { label: "Location", value: "Helsinki, Finland", href: null },
               ].map(({ label, value, href }) => (
                 <div key={label} className="flex flex-col gap-0.5">

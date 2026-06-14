@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Sustainability & Ethics",
   description:
-    "Vananhh's commitment to cruelty-free, vegan, and sustainably sourced beauty products. A transparent look at the eco-conscious standards behind every look.",
+    "Anh Do's commitment to cruelty-free, vegan, and sustainably sourced beauty products. A transparent look at the eco-conscious standards behind every look.",
 };
 
 const standards = [
