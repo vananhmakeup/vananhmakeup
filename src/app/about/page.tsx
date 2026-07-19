@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Meet the artist behind Anh Do — a Helsinki-based freelance makeup artist committed to Nordic clean beauty, cruelty-free products, and timeless results.",
+    "Meet the artist behind Anh Do — a freelance makeup artist known for Asian-inspired soft glam, luminous skin finishes, and timeless results.",
 };
 
 const brands = [
@@ -44,15 +44,16 @@ export default function AboutPage() {
               I believe the best makeup disappears into the skin — it simply
               makes you look like the most radiant, rested version of yourself.
               That conviction has shaped every creative decision I have made
-              since picking up a brush in Helsinki over a decade ago.
+              since picking up a brush over a decade ago.
             </p>
             <p
               className="text-[16px] text-[var(--color-ash)] leading-[1.7] max-w-lg"
               style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
             >
               My work spans bridal, editorial, and personal occasions — and the
-              thread running through all of it is Nordic restraint: clean lines,
-              considered colour, and skin that glows rather than covers.
+              thread running through all of it is Asian-inspired balance: soft
+              definition, intentional colour harmony, and skin that glows rather
+              than covers.
             </p>
           </div>
           {/* Photo placeholder */}
@@ -71,9 +72,9 @@ export default function AboutPage() {
       <section className="py-6 bg-[var(--color-nordic-sand)]">
         <div className="max-w-7xl mx-auto px-6 md:px-10 flex flex-wrap gap-8 items-center justify-between">
           {[
-            { label: "Languages", value: "Finnish · English · Swedish" },
+            { label: "Languages", value: "English · Vietnamese" },
             { label: "Based in", value: "Helsinki, Finland" },
-            { label: "Available for", value: "Destination work worldwide" },
+            { label: "Available for", value: "Destination work across Europe & Asia" },
           ].map(({ label, value }) => (
             <div key={label} className="flex flex-col gap-0.5">
               <span

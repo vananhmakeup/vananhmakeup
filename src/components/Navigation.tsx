@@ -8,7 +8,6 @@ const links = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/portfolio", label: "Portfolio" },
-  { href: "/bridal", label: "Bridal" },
 ];
 
 export default function Navigation() {
@@ -53,7 +52,7 @@ export default function Navigation() {
               className="text-[10px] tracking-[0.18em] uppercase text-[var(--color-ash)] mt-0.5"
               style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
             >
-              Makeup Artist · Helsinki
+              Makeup Artist · Asian-inspired Looks
             </span>
           </Link>
 

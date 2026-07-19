@@ -3,16 +3,19 @@
 import { useState } from "react";
 
 const serviceTypes = [
-  "Bridal",
+  "Asian soft glam bridal",
   "Bridal party",
   "Editorial / Fashion",
   "Events & Special occasions",
   "Corporate & Headshots",
+  "Personal Makeup Course",
   "Other",
 ];
 
 export default function BookingPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -29,10 +32,23 @@ export default function BookingPage() {
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
   ) => setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: wire up to email service (Brevo / Resend)
-    setSubmitted(true);
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch("/api/booking", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error("send_failed");
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Please try again or email me directly.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const inputClass =
@@ -298,12 +314,21 @@ export default function BookingPage() {
                 enquiries within 24 hours.
               </p>
 
+              {error && (
+                <p
+                  className="text-[13px] text-red-500"
+                  style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
+                >
+                  {error}
+                </p>
+              )}
               <button
                 type="submit"
-                className="self-start px-8 py-3.5 rounded-full bg-[var(--color-nordic-sand)] text-[var(--color-charcoal-birch)] text-[14px] tracking-wide hover:bg-[var(--color-nordic-sand-dark)] transition-colors duration-200"
+                disabled={loading}
+                className="self-start px-8 py-3.5 rounded-full bg-[var(--color-nordic-sand)] text-[var(--color-charcoal-birch)] text-[14px] tracking-wide hover:bg-[var(--color-nordic-sand-dark)] transition-colors duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
                 style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontWeight: 500 }}
               >
-                Send Enquiry
+                {loading ? "Sending…" : "Send Enquiry"}
               </button>
             </form>
           )}
@@ -317,7 +342,8 @@ export default function BookingPage() {
             "Responds within 24 hours",
             "Cruelty-free products only",
             "Available for destination weddings",
-            "Finnish · English · Swedish",
+            "Asian-inspired bridal and editorial looks",
+            "English · Vietnamese",
           ].map((item) => (
             <div key={item} className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-nordic-sand)]" />

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Sustainability & Ethics",
   description:
-    "Anh Do's commitment to cruelty-free, vegan, and sustainably sourced beauty products. A transparent look at the eco-conscious standards behind every look.",
+    "Anh Do's commitment to cruelty-free, vegan, and sustainably sourced beauty products. A transparent look at the eco-conscious standards behind every Asian-inspired look.",
 };
 
 const standards = [
@@ -115,8 +115,8 @@ export default function SustainabilityPage() {
             >
               For local Helsinki bookings, I travel by public transit where possible.
               Initial consultations are offered via video call to reduce unnecessary
-              journeys. For destination work, I consolidate travel to minimise
-              individual trips.
+              journeys. For destination work across Europe and Asia, I consolidate
+              travel to minimise individual trips.
             </p>
           </div>
         </div>

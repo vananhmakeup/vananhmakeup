@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with Anh Do — makeup artist Helsinki. For bookings, press enquiries, and collaborations.",
+  description: "Get in touch with Anh Do — Asian-inspired makeup artist. For bookings, press enquiries, and collaborations.",
 };
 
 export default function ContactPage() {
@@ -37,9 +37,11 @@ export default function ContactPage() {
 
             <div className="flex flex-col gap-5 mt-4">
               {[
-                { label: "Email", value: "hello@Anh Do.fi", href: "mailto:hello@Anh Do.fi" },
-                { label: "Instagram", value: "@Anh Domakeup", href: "https://instagram.com" },
-                { label: "Location", value: "Helsinki, Finland", href: null },
+                { label: "Email", value: "vananhdo2703@gmail.com", href: "mailto:vananhdo2703@gmail.com" },
+                { label: "Phone", value: "+358 41 325 3986", href: "tel:+358413253986" },
+                { label: "Instagram", value: "@vananhmakeupyouglow", href: "https://instagram.com/vananhmakeupyouglow" },
+                { label: "Tiktok", value: "Van Anh Makeup You Glow ✨", href: "https://www.tiktok.com/@van.anh.do68" },
+                { label: "Location", value: "Espoo, Finland (Destination friendly)", href: null },
               ].map(({ label, value, href }) => (
                 <div key={label} className="flex flex-col gap-0.5">
                   <span
@@ -89,8 +91,9 @@ export default function ContactPage() {
               className="text-[14px] text-[var(--color-ash)] leading-[1.7]"
               style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
             >
-              I work in Finnish, English, and Swedish — please write in whichever
-              feels most natural to you.
+              I work in English and Vietnamese. You are welcome to share mood
+              boards inspired by Korean, Japanese, Vietnamese, Chinese, Thai,
+              or pan-Asian beauty references.
             </p>
             <Link
               href="/booking"

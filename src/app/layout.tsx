@@ -21,25 +21,24 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Anh Do — Makeup Artist Helsinki",
-    template: "%s | Anh Do — Makeup Artist Helsinki",
+    default: "Anh Do — Asian-Inspired Makeup Artist",
+    template: "%s | Anh Do — Asian-Inspired Makeup Artist",
   },
   description:
-    "Premium freelance makeup artist based in Helsinki, Finland. Specialising in Nordic clean beauty, high-end bridal styling, and editorial fashion makeup. Cruelty-free and sustainably minded.",
+    "Premium freelance makeup artist specialising in Asian-inspired beauty looks: luminous skin, soft glam bridal styling, and editorial makeup artistry. Cruelty-free and sustainably minded.",
   keywords: [
-    "makeup artist Helsinki",
-    "bridal makeup Helsinki",
-    "häämeikki Helsinki",
-    "editorial makeup Finland",
-    "cruelty free makeup artist Helsinki",
-    "Nordic clean beauty",
+    "asian makeup artist",
+    "asian bridal makeup",
+    "k-beauty inspired makeup",
+    "j-beauty inspired makeup",
+    "editorial asian makeup",
+    "soft glam makeup artist",
   ],
   openGraph: {
-    title: "Anh Do — Makeup Artist Helsinki",
+    title: "Anh Do — Asian-Inspired Makeup Artist",
     description:
-      "Premium freelance makeup artist based in Helsinki, Finland. Clean beauty, bridal styling, and editorial fashion makeup.",
-    locale: "en_FI",
-    alternateLocale: "fi_FI",
+      "Asian-inspired beauty looks with luminous skin, refined bridal styling, and editorial polish.",
+    locale: "en",
     type: "website",
   },
   robots: {

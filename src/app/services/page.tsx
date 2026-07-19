@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Services & Pricing",
   description:
-    "Bridal, editorial, events, and personal makeup services in Helsinki. Transparent pricing, cruelty-free products, and a seamless booking experience.",
+    "Bridal, editorial, events, and personal makeup services with an Asian-inspired style. Transparent pricing, cruelty-free products, and a seamless booking experience.",
 };
 
 const services = [
@@ -13,44 +13,43 @@ const services = [
     tag: "Most popular",
     duration: "2–3 hours on the day",
     description:
-      "Your wedding day look, perfected. From the initial consultation through to your trial and the morning itself, I am with you every step of the way.",
+      "Your wedding day look, refined for your features and personal style. From consultation to trial to the wedding morning, I am with you every step of the way.",
     includes: [
       "Complimentary initial consultation",
-      "Full bridal trial session (2 hrs)",
       "Wedding day application",
-      "Airbrush finish available",
+      "K-beauty inspired skin prep and glow layering",
       "Touch-up kit to keep",
       "Travel within Helsinki included",
     ],
-    price: "From €280",
-    addons: ["Additional bridesmaid: from €80", "Mother of bride/groom: from €100"],
-    href: "/bridal",
-    cta: "View bridal packages",
+    price: "From €250",
+    addons: ["Trial / test makeup session (2 hrs): €80", "Additional bridesmaid: from €80", "Mother of bride/groom: from €100"],
+    href: "/booking",
+    cta: "Enquire about bridal",
   },
   {
-    name: "Editorial & Fashion",
-    tag: "Best for creative work",
-    duration: "Flexible",
+    name: "Personal Makeup Course",
+    tag: "5 lessons",
+    duration: "Flexible — sessions scheduled to suit you",
     description:
-      "Whether you need avant-garde runway looks or clean commercial beauty, I collaborate directly with your creative team to bring the vision to life.",
+      "A hands-on course designed to teach you to do your own makeup confidently. Each session builds on the last, covering foundation through to complete looks tailored to your skin tone, features, and style.",
     includes: [
-      "Concept brief review",
-      "Studio and on-location",
-      "Avant-garde, commercial & beauty editorial",
-      "Multiple looks per day available",
-      "Rush bookings considered",
+      "Lesson 1 — Skin prep & foundation: skincare base, flawless foundation application, contouring, and blush",
+      "Lesson 2 — Detail work: eye techniques, eyebrow shaping and filling, lip liner and colour",
+      "Lessons 3–5 — Complete looks: 2–3 personalised makeup styles based on your preferences (e.g. pink tones, warm orange & brown, nude glam)",
+      "Product guidance and kit recommendations throughout",
+      "Notes and product list provided after each session",
     ],
-    price: "From €200",
-    addons: ["Full-day rate: from €550", "Half-day rate: from €300"],
-    href: "/portfolio",
-    cta: "View editorial work",
+    price: "€250 for 5 lessons",
+    addons: ["Individual top-up lesson: €65", "Course gift voucher available"],
+    href: "/booking",
+    cta: "Enquire about the course",
   },
   {
     name: "Events & Personal",
     tag: null,
     duration: "45–90 minutes",
     description:
-      "Special occasions, corporate headshots, film and television, and personal styling sessions for anyone who wants to feel exceptional.",
+      "Special occasions, corporate headshots, film and television, and personal styling sessions for anyone who wants to feel polished and confident.",
     includes: [
       "Special occasions & galas",
       "Corporate headshots",
@@ -59,15 +58,15 @@ const services = [
       "Product recommendations included",
     ],
     price: "From €120",
-    addons: ["Group bookings: contact for quote", "Virtual consultation: €45"],
+    addons: ["Group bookings: contact for quote"],
     href: "/booking",
     cta: "Book a session",
   },
 ];
 
 const addons = [
-  { name: "Individual lash application", price: "+€20" },
-  { name: "Airbrush foundation upgrade", price: "+€30" },
+  { name: "Hair styling add-on (simple — e.g. sleek, soft waves)", price: "+€30" },
+  { name: "Hair styling add-on (complex — e.g. updo, braids, extensions)", price: "+€50" },
   { name: "On-location travel surcharge (outside Helsinki)", price: "€0.40/km" },
   { name: "Early morning surcharge (before 7am)", price: "+€40" },
   { name: "Destination wedding (international)", price: "Contact for quote" },
@@ -96,7 +95,7 @@ export default function ServicesPage() {
             style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
           >
             All prices include a complimentary consultation. Travel within Helsinki
-            is included. International and destination enquiries are welcome.
+            is included. Destination enquiries across Europe and Asia are welcome.
           </p>
         </div>
       </section>

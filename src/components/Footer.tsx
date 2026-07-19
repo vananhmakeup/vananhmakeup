@@ -4,15 +4,14 @@ const navLinks = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/portfolio", label: "Portfolio" },
-  { href: "/bridal", label: "Bridal" },
   { href: "/sustainability", label: "Sustainability" },
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
 ];
 
 const socialLinks = [
-  { href: "https://instagram.com", label: "Instagram", icon: InstagramIcon },
-  { href: "https://facebook.com", label: "Facebook", icon: FacebookIcon },
+  { href: "https://instagram.com/vananhmakeupyouglow", label: "Instagram", icon: InstagramIcon },
+  { href: "https://www.tiktok.com/@van.anh.do68", label: "Tiktok", icon: TiktokIcon },
 ];
 
 export default function Footer() {
@@ -32,15 +31,15 @@ export default function Footer() {
               className="text-[10px] tracking-[0.18em] uppercase text-[var(--color-ash)] mt-1"
               style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
             >
-              Makeup Artist · Helsinki
+              Makeup Artist · Asian-inspired Looks
             </span>
           </Link>
           <p
             className="text-[14px] text-[var(--color-ash)] leading-relaxed max-w-xs"
             style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
           >
-            Nordic clean beauty, high-end bridal styling, and editorial fashion
-            makeup — crafted with intention.
+            Asian-inspired soft glam, refined bridal styling, and editorial
+            beauty direction — crafted with intention.
           </p>
           <div className="flex gap-4 mt-2">
             {socialLinks.map(({ href, label, icon: Icon }) => (
@@ -92,14 +91,22 @@ export default function Footer() {
           <ul className="flex flex-col gap-3 text-[14px] text-[var(--color-linen-mist)]" style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}>
             <li>
               <a
-                href="mailto:hello@Anh Do.fi"
+                href="mailto:vananhdo2703@gmail.com"
                 className="hover:text-[var(--color-nordic-sand)] transition-colors duration-200"
               >
-                hello@Anh Do.fi
+                vananhdo2703@gmail.com
               </a>
             </li>
-            <li>Helsinki, Finland</li>
-            <li className="text-[var(--color-ash)]">Available for destination work worldwide</li>
+            <li>
+              <a
+                href="tel:+358413253986"
+                className="hover:text-[var(--color-nordic-sand)] transition-colors duration-200"
+              >
+                +358 41 325 3986
+              </a>
+            </li>
+            <li>Espoo, Finland</li>
+            <li className="text-[var(--color-ash)]">Available for destination work across Europe & Asia</li>
           </ul>
           <Link
             href="/booking"
@@ -126,7 +133,7 @@ export default function Footer() {
               className="text-[12px] text-[var(--color-ash)]"
               style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
             >
-              Cruelty-free &amp; sustainably minded
+              Skin-first, cruelty-free, and sustainably minded
             </span>
           </div>
           <div className="flex gap-4">
@@ -150,10 +157,10 @@ function InstagramIcon() {
   );
 }
 
-function FacebookIcon() {
+function TiktokIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z" />
     </svg>
   );
 }

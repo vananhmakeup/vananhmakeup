@@ -32,7 +32,7 @@ export default function PrivacyPage() {
           },
           {
             title: "Your rights",
-            body: "Under GDPR, you have the right to access, correct, or delete your personal data at any time. To exercise these rights, contact hello@Anh Do.fi.",
+            body: "Under GDPR, you have the right to access, correct, or delete your personal data at any time. To exercise these rights, contact vananhdo2703@gmail.com.",
           },
           {
             title: "Cookies",
@@ -40,7 +40,7 @@ export default function PrivacyPage() {
           },
           {
             title: "Contact",
-            body: "For any data-related enquiries, contact: hello@Anh Do.fi",
+            body: "For any data-related enquiries, contact: vananhdo2703@gmail.com",
           },
         ].map(({ title, body }) => (
           <div key={title} className="flex flex-col gap-2">

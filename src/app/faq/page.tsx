@@ -8,7 +8,7 @@ const faqs = [
     items: [
       {
         q: "How far in advance should I book?",
-        a: "For weddings, I recommend booking 9–12 months in advance, especially for summer (June–August) and autumn (September–October) dates. For editorial and event work, 2–4 weeks is usually sufficient.",
+        a: "For weddings, I recommend booking 9–12 months in advance, especially for spring and autumn dates. For editorial and event work, 2–4 weeks is usually sufficient.",
       },
       {
         q: "Do you hold dates without a deposit?",
@@ -25,7 +25,7 @@ const faqs = [
     items: [
       {
         q: "Is a bridal trial included?",
-        a: "Yes — all bridal packages include a full two-hour trial session. The trial is essential and not optional. It is where we perfect your look and ensure everything performs exactly as it should on the day.",
+        a: "Yes — all bridal packages include a full two-hour trial session. The trial is where we perfect complexion glow, eye shape balance, lash style, and lip tones so everything performs beautifully on the day.",
       },
       {
         q: "How long does the wedding day application take?",
@@ -50,7 +50,7 @@ const faqs = [
       },
       {
         q: "Can you recommend products for me to buy?",
-        a: "Yes — after any session, I send a personalised product list of everything used so you can maintain your look at home.",
+        a: "Yes — after any session, I send a personalised product list so you can maintain your look at home with similar textures and tones.",
       },
     ],
   },
@@ -59,7 +59,7 @@ const faqs = [
     items: [
       {
         q: "Do you travel for destination weddings?",
-        a: "Yes. I am available for destination work worldwide. Travel, accommodation, and daily rates for international bookings are discussed as part of the quotation process.",
+        a: "Yes. I am available for destination work across Europe and Asia. Travel, accommodation, and daily rates for international bookings are discussed as part of the quotation process.",
       },
       {
         q: "Can you come to my home or venue?",

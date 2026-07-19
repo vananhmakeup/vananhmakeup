@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -8,14 +9,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 md:px-10 w-full grid md:grid-cols-[55%_45%] gap-0 items-center">
           {/* Image placeholder */}
           <div className="relative h-[60vh] md:h-screen md:-mt-16 bg-[var(--color-linen-mist)] overflow-hidden">
-            <div className="absolute inset-0 flex items-end p-8">
-              <span
-                className="text-[11px] tracking-[0.2em] uppercase text-[var(--color-ash)]"
-                style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
-              >
-                Portfolio image · 3:4 · Replace with hero photo
-              </span>
-            </div>
+            <Image
+              src="/images/ngocha1.JPG"
+              alt="Bridal makeup portfolio look"
+              fill
+              priority
+              sizes="(min-width: 768px) 55vw, 100vw"
+              className="object-cover"
+            />
           </div>
 
           {/* Text */}
@@ -24,13 +25,13 @@ export default function Home() {
               className="text-[11px] tracking-[0.2em] uppercase text-[var(--color-fjord-slate)]"
               style={{ fontFamily: "var(--font-dm-sans), sans-serif", fontWeight: 500 }}
             >
-              Helsinki · Est. 2017
+              Asian-inspired artistry · Est. 2017
             </p>
             <h1
               className="text-[clamp(2.5rem,5vw,4.5rem)] font-light leading-[1.1] text-[var(--color-charcoal-birch)]"
               style={{ fontFamily: "var(--font-cormorant), serif" }}
             >
-              Nordic beauty,
+              Asian beauty,
               <br />
               crafted with
               <br />
@@ -40,8 +41,9 @@ export default function Home() {
               className="text-[16px] text-[var(--color-ash)] leading-[1.7] max-w-sm"
               style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
             >
-              Freelance makeup artist specialising in bridal, editorial, and clean
-              beauty — across Helsinki and beyond.
+              Freelance makeup artist specialising in bridal, editorial, and soft
+              glam looks inspired by Vietnamese elegance, Chinese refinement,
+              Thai radiance, and Korean skin-first beauty.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mt-2">
               <Link
@@ -68,18 +70,18 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 md:px-10 grid md:grid-cols-3 gap-12">
           {[
             {
-              title: "Nordic Minimalism",
-              body: "Less is more. Every look is precisely what it needs to be — nothing superfluous, nothing missing.",
+              title: "Asian Soft Glam",
+              body: "Fresh skin, airy layers, and thoughtfully placed definition for a polished look that still feels light.",
               icon: <MinimalismIcon />,
             },
             {
-              title: "Clean Ingredients",
-              body: "Only cruelty-free, sustainably sourced products touch your skin. Every brand earns its place in my kit.",
+              title: "Skin-first Ritual",
+              body: "Hydration prep and lightweight formulas help makeup wear beautifully while keeping skin comfortable all day.",
               icon: <LeafIcon />,
             },
             {
-              title: "Timeless Results",
-              body: "Looks that photograph beautifully, hold all day, and feel entirely like you — elevated.",
+              title: "Camera-ready Finish",
+              body: "Looks that read softly in person, photograph cleanly, and stay refined from ceremony to after-party.",
               icon: <DiamondIcon />,
             },
           ].map(({ title, body, icon }) => (
@@ -105,31 +107,30 @@ export default function Home() {
       {/* ── Portfolio Preview ── */}
       <section className="py-24 bg-[var(--color-birch-white)]">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
-          <div className="grid md:grid-cols-[2fr_1fr] gap-3 h-[600px] md:h-[700px]">
-            {/* Large left image */}
-            <div className="bg-[var(--color-linen-mist)] relative overflow-hidden group">
-              <div className="absolute inset-0 transition-transform duration-500 group-hover:scale-[1.03] bg-[var(--color-linen-mist)]" />
-              <span
-                className="absolute bottom-4 left-4 text-[10px] tracking-[0.18em] uppercase text-[var(--color-ash)]"
-                style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
-              >
-                Bridal
-              </span>
-            </div>
-            {/* Three right images */}
-            <div className="grid grid-rows-3 gap-3">
-              {["Editorial", "Clean Beauty", "Events"].map((label) => (
-                <div key={label} className="bg-[var(--color-linen-mist)] relative overflow-hidden group">
-                  <div className="absolute inset-0 transition-transform duration-500 group-hover:scale-[1.03] bg-[var(--color-linen-mist)]" />
-                  <span
-                    className="absolute bottom-3 left-3 text-[10px] tracking-[0.18em] uppercase text-[var(--color-ash)]"
-                    style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
-                  >
-                    {label}
-                  </span>
-                </div>
-              ))}
-            </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {([
+              { label: "Bridal", src: "/images/NAM_1084.JPG" },
+              { label: "Concepts", src: "/images/0C8A4515.JPG" },
+              { label: "Asian Soft Glam", src: "/images/IMG_8316.jpg" },
+              { label: "Tea Ceremony", src: "/images/IMG_7324.JPG" },
+            ] as { label: string; src: string }[]).map(({ label, src }) => (
+              <div key={label} className="bg-[var(--color-linen-mist)] relative overflow-hidden group aspect-[3/4]">
+                <Image
+                  src={src}
+                  alt={`${label} portfolio image`}
+                  fill
+                  sizes="(min-width: 768px) 25vw, 50vw"
+                  className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+                />
+                <div className="absolute inset-0 bg-[rgba(44,43,41,0.14)]" />
+                <span
+                  className="absolute bottom-3 left-3 text-[10px] tracking-[0.18em] uppercase text-[var(--color-off-white)]"
+                  style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
+                >
+                  {label}
+                </span>
+              </div>
+            ))}
           </div>
           <div className="mt-10 flex justify-center">
             <Link
@@ -157,24 +158,24 @@ export default function Home() {
               {
                 name: "Bridal & Bridesmaid",
                 description: [
-                  "Bridal trial included",
-                  "On-location service",
-                  "Airbrush available",
-                  "Touch-up kit provided",
+                  "Complimentary initial consultation",
+                  "Wedding day application",
+                  "K-beauty inspired skin prep and glow layering",
+                  "Touch-up kit to keep",
                 ],
-                price: "From €280",
-                href: "/bridal",
+                price: "From €250",
+                href: "/booking",
               },
               {
-                name: "Editorial & Fashion",
+                name: "Personal Makeup Course",
                 description: [
-                  "Concept collaboration",
-                  "Studio & on-location",
-                  "Avant-garde & commercial",
-                  "Usage rights flexible",
+                  "5 structured lessons",
+                  "Skin prep, base, contour and blush",
+                  "Eye, brow and lip detail training",
+                  "Personalised product guidance",
                 ],
-                price: "From €200",
-                href: "/services",
+                price: "€250 for 5 lessons",
+                href: "/booking",
               },
               {
                 name: "Events & Personal",
@@ -182,10 +183,10 @@ export default function Home() {
                   "Special occasions",
                   "Corporate & headshots",
                   "Film & TV",
-                  "Virtual consultations",
+                  "Product recommendations included",
                 ],
                 price: "From €120",
-                href: "/services",
+                href: "/booking",
               },
             ].map(({ name, description, price, href }) => (
               <div
@@ -243,14 +244,14 @@ export default function Home() {
           {[
             {
               quote:
-                "She understood exactly the look I had in mind — natural, radiant, and completely me. I cried a little when I saw myself in the mirror. In the best way.",
+                "She created exactly the Asian soft-glam look I wanted: luminous skin, delicate eyes, and a lip tone that looked effortless in every photo.",
               author: "Emilia K.",
               location: "Helsinki",
               date: "June 2024",
             },
             {
               quote:
-                "Working with her on the editorial shoot was effortless. She came prepared, adapted to every lighting change, and the final images were stunning. Our go-to in Helsinki.",
+                "Our editorial concept blended modern couture with East Asian beauty references, and she translated it perfectly on set. Clean, elevated, and incredibly photogenic.",
               author: "Markus V.",
               location: "Creative Director",
               date: "March 2024",
@@ -306,14 +307,14 @@ export default function Home() {
           >
             Your wedding day deserves
             <br />
-            the perfect finish.
+            your signature glow.
           </h2>
           <p
             className="text-[var(--color-ash)] text-[15px] max-w-md leading-[1.7]"
             style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
           >
-            Dates fill quickly — especially for summer and autumn weddings.
-            Reach out early to secure yours.
+            Dates fill quickly for spring wedding season and festival weekends.
+            Reach out early to reserve your date.
           </p>
           <Link
             href="/booking"
