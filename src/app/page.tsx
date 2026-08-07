@@ -174,7 +174,7 @@ export default function Home() {
                   "Eye, brow and lip detail training",
                   "Personalised product guidance",
                 ],
-                price: "€250 for 5 lessons",
+                price: "€250 for 4 lessons",
                 href: "/booking",
               },
               {

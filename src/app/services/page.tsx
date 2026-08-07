@@ -39,7 +39,7 @@ const services = [
       "Product guidance and kit recommendations throughout",
       "Notes and product list provided after each session",
     ],
-    price: "€250 for 5 lessons",
+    price: "€250 for 4 lessons",
     addons: ["Individual top-up lesson: €65", "Course gift voucher available"],
     href: "/booking",
     cta: "Enquire about the course",
