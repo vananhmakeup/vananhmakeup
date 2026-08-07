@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -41,20 +42,21 @@ export default function AboutPage() {
               className="text-[16px] text-[var(--color-ash)] leading-[1.7] max-w-lg"
               style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
             >
-              My work spans bridal, editorial, and personal occasions — and the
-              thread running through all of it is Asian-inspired balance: soft
-              definition, intentional colour harmony, and skin that glows rather
-              than covers.
+              My work spans bridal, editorial, personal occasions, and
+              personal makeup courses — and the thread running through all of
+              it is Asian-inspired balance: soft definition, intentional colour
+              harmony, and skin that glows rather than covers.
             </p>
           </div>
-          {/* Photo placeholder */}
-          <div className="bg-[var(--color-linen-mist)] h-[520px] flex items-end p-6">
-            <span
-              className="text-[10px] tracking-[0.18em] uppercase text-[var(--color-ash)]"
-              style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
-            >
-              Artist portrait · Replace with photo
-            </span>
+          <div className="relative h-[520px] overflow-hidden bg-[var(--color-linen-mist)]">
+            <Image
+              src="/artist.JPG"
+              alt="Makeup artist Anh Do portrait"
+              fill
+              className="object-contain"
+              sizes="(min-width: 768px) 50vw, 100vw"
+              priority
+            />
           </div>
         </div>
       </section>
