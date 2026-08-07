@@ -7,15 +7,6 @@ export const metadata: Metadata = {
     "Meet the artist behind Anh Do — a freelance makeup artist known for Asian-inspired soft glam, luminous skin finishes, and timeless results.",
 };
 
-const brands = [
-  { name: "Kjaer Weis", reason: "Refillable packaging, luxurious pigment" },
-  { name: "RMS Beauty", reason: "Raw, food-grade ingredients" },
-  { name: "Ilia Beauty", reason: "Skin care + makeup hybrids" },
-  { name: "Westman Atelier", reason: "Clean luxury, editorial performance" },
-  { name: "Ere Perez", reason: "Plant-based, vegan certified" },
-  { name: "Antonym", reason: "ECOCERT organic certified" },
-];
-
 export default function AboutPage() {
   return (
     <>
@@ -91,43 +82,6 @@ export default function AboutPage() {
               </span>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* Products I trust */}
-      <section className="py-24 bg-[var(--color-birch-white)]">
-        <div className="max-w-7xl mx-auto px-6 md:px-10">
-          <h2
-            className="text-[clamp(1.8rem,3vw,2.5rem)] font-light text-[var(--color-charcoal-birch)] mb-3"
-            style={{ fontFamily: "var(--font-cormorant), serif" }}
-          >
-            Products I trust
-          </h2>
-          <p
-            className="text-[14px] text-[var(--color-ash)] mb-12 max-w-xl leading-[1.7]"
-            style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
-          >
-            Every brand in my kit meets the same standard: cruelty-free
-            certified, free of harmful ingredients, and genuinely high-performing.
-          </p>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {brands.map(({ name, reason }) => (
-              <div key={name} className="border border-[rgba(201,185,154,0.4)] p-6 flex flex-col gap-2">
-                <h3
-                  className="text-[18px] font-light text-[var(--color-charcoal-birch)]"
-                  style={{ fontFamily: "var(--font-cormorant), serif" }}
-                >
-                  {name}
-                </h3>
-                <p
-                  className="text-[13px] text-[var(--color-ash)] leading-[1.6]"
-                  style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
-                >
-                  {reason}
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
