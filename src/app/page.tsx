@@ -232,69 +232,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Testimonials ── */}
-      <section className="py-24 bg-[var(--color-linen-mist)]">
-        <div className="max-w-7xl mx-auto px-6 md:px-10 flex flex-col gap-16">
-          <h2
-            className="text-[clamp(2rem,4vw,3rem)] font-light text-[var(--color-charcoal-birch)] text-center"
-            style={{ fontFamily: "var(--font-cormorant), serif" }}
-          >
-            What clients say
-          </h2>
-          {[
-            {
-              quote:
-                "She created exactly the Asian soft-glam look I wanted: luminous skin, delicate eyes, and a lip tone that looked effortless in every photo.",
-              author: "Emilia K.",
-              location: "Helsinki",
-              date: "June 2024",
-            },
-            {
-              quote:
-                "Our editorial concept blended modern couture with East Asian beauty references, and she translated it perfectly on set. Clean, elevated, and incredibly photogenic.",
-              author: "Markus V.",
-              location: "Creative Director",
-              date: "March 2024",
-            },
-          ].map(({ quote, author, location, date }, i) => (
-            <div
-              key={author}
-              className={`flex flex-col md:flex-row gap-8 items-start ${i % 2 === 1 ? "md:flex-row-reverse" : ""}`}
-            >
-              {/* Monogram */}
-              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[var(--color-nordic-sand)] flex items-center justify-center">
-                <span
-                  className="text-xl font-light text-[var(--color-charcoal-birch)]"
-                  style={{ fontFamily: "var(--font-cormorant), serif" }}
-                >
-                  {author[0]}
-                </span>
-              </div>
-              <div className="flex flex-col gap-3 max-w-2xl">
-                {/* Stars */}
-                <div className="flex gap-1">
-                  {Array.from({ length: 5 }).map((_, s) => (
-                    <StarIcon key={s} />
-                  ))}
-                </div>
-                <blockquote
-                  className="text-[clamp(1.1rem,2.5vw,1.4rem)] font-light leading-[1.6] text-[var(--color-charcoal-birch)]"
-                  style={{ fontFamily: "var(--font-cormorant), serif", fontStyle: "italic" }}
-                >
-                  &ldquo;{quote}&rdquo;
-                </blockquote>
-                <cite
-                  className="text-[13px] text-[var(--color-ash)] not-italic"
-                  style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
-                >
-                  — {author}, {location} · {date}
-                </cite>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* ── Booking CTA Banner ── */}
       <section className="relative py-28 bg-[var(--color-charcoal-birch)] overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -360,10 +297,3 @@ function DiamondIcon() {
   );
 }
 
-function StarIcon() {
-  return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--color-nordic-sand)" stroke="var(--color-nordic-sand)" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-    </svg>
-  );
-}
