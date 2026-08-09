@@ -28,19 +28,19 @@ const services = [
   },
   {
     name: "Personal Makeup Course",
-    tag: "5 lessons",
+    tag: "4 lessons",
     duration: "Flexible — sessions scheduled to suit you",
     description:
       "A hands-on course designed to teach you to do your own makeup confidently. Each session builds on the last, covering foundation through to complete looks tailored to your skin tone, features, and style.",
     includes: [
       "Lesson 1 — Skin prep & foundation: skincare base, flawless foundation application, contouring, and blush",
       "Lesson 2 — Detail work: eye techniques, eyebrow shaping and filling, lip liner and colour",
-      "Lessons 3–5 — Complete looks: 2–3 personalised makeup styles based on your preferences (e.g. pink tones, warm orange & brown, nude glam)",
+      "Lessons 3–4 — Complete looks: 1-2 personalised makeup styles based on your preferences (e.g. pink tones, warm orange & brown, nude glam)",
       "Product guidance and kit recommendations throughout",
       "Notes and product list provided after each session",
     ],
     price: "€250 for 4 lessons",
-    addons: ["Individual top-up lesson: €65", "Course gift voucher available"],
+    addons: ["Individual top-up lesson: €70", "Course gift voucher available"],
     href: "/booking",
     cta: "Enquire about the course",
   },
