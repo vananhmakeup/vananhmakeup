@@ -70,6 +70,7 @@ const addons = [
   { name: "On-location travel surcharge (outside Helsinki)", price: "€0.40/km" },
   { name: "Early morning surcharge (before 7am)", price: "+€40" },
   { name: "Destination wedding (international)", price: "Contact for quote" },
+  { name: "Student discount (valid student ID required)", price: "-10%" },
 ];
 
 export default function ServicesPage() {
@@ -96,6 +97,7 @@ export default function ServicesPage() {
           >
             All prices include a complimentary consultation. Travel within Helsinki
             is included. Destination enquiries across Europe and Asia are welcome.
+            Student discount: 10% off with valid student ID.
           </p>
         </div>
       </section>
