@@ -185,7 +185,7 @@ export default function Home() {
                   "Film & TV",
                   "Product recommendations included",
                 ],
-                price: "From €120",
+                price: "From €100",
                 href: "/booking",
               },
             ].map(({ name, description, price, href }) => (

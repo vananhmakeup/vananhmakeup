@@ -57,7 +57,7 @@ const services = [
       "Virtual consultations available",
       "Product recommendations included",
     ],
-    price: "From €120",
+    price: "From €100",
     addons: ["Group bookings: contact for quote"],
     href: "/booking",
     cta: "Book a session",
